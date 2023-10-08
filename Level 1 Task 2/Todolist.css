@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(background.png);
+    position: absolute;
+    z-index: -1;
+    background-size: cover;
+}
+.todohead{
+    width: 100%;
+    max-width: 500px;
+    min-height: 260px;
+    background: linear-gradient(200deg,aqua,white);
+    margin-top: 310px;
+    margin-left: 508px;
+    padding: 22px 20px 50px;
+    border-radius: 20px;
+    transition: 0.2s ease;
+    
+}
+.todohead:hover{
+    box-shadow: 10px 10px 20px black;
+}
+.todohead h1{
+    margin-left:10px ;
+    background-image: linear-gradient(90deg,red,yellow);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: flex;
+    align-items: center;
+}
+.todohead img{
+    margin-right: 20px;
+    width: 40px;
+}
+input,button{
+    appearance: none;
+    border: none;
+    outline: none;
+    background: none;
+}
+#newtask{
+    display: flex;
+}
+#newtask input {
+    color: rgb(69, 69, 69);
+}
+#newtaskinput{
+    flex: 1 1 0.7%;
+    margin-top: 20px;
+    padding: 20px;
+    margin-right: 20px;
+    border-radius: 20px;
+    font-size: 19px;
+    background:linear-gradient(120deg,aquamarine,white);
+    transition: 0.4s ease-in;
+}
+#newtaskinput:hover{
+    box-shadow: 10px 12px 20px lightslategray;
+}
+
+#newtaskinput::placeholder{
+    color: black;
+}
+#newtasksubmit{
+    margin:0 auto;
+    margin-top: 25px;
+    border-radius: 20px;
+    font-size: 50px;
+    cursor: pointer;
+    background-image: linear-gradient(180deg,red,yellow);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.tasklist{
+    max-width: 500px;
+ width: 100%;   
+ padding: 10px 10px;
+ margin: 0 auto;
+}
+.tasklist h2{
+    background-image: linear-gradient(180deg,yellow,red);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.tasks{
+    padding: 10px 0;
+}
+.tasks .task{
+    display: flex;
+    justify-content: space-between;
+    background:linear-gradient(to left,aquamarine,white);
+    padding: 10px 10px;
+    border-radius: 30px;
+    transition: .4s ease-out;
+}
+.tasks .task:hover{
+    box-shadow: 10px 11px 20px lightslategray;
+}
+.content input{
+    color: rgb(69, 69, 69);
+}
+.tasks .task .actions{
+    display: flex;
+    gap: 10px;
+    
+}
+.task .actions button{
+cursor: pointer;
+margin: 0 3px;
+font-size: 15px;
+}
+.task .edit{
+    color: red;
+}
+.task .delete{
+    color: red;
+}
